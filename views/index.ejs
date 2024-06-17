@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hra: Rozpoznej tvary</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="my-4">Rozpoznej tvary</h1>
+        <div class="d-flex justify-content-center align-items-center mb-3">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            <div id="timeBarContainer">
+                <div id="timeBar"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="text" id="nickname" class="form-control mb-3" placeholder="Zadej svou přezdívku">
+            <button id="startBtn" class="btn btn-primary mb-3">Začít hru</button>
+            <a href="/tabulka" class="btn btn-secondary mb-3">Zobrazit nejvyšší skóre</a>
+        </div>
+        <div id="answerSection" class="form-group" style="display:none;">
+            <input type="number" id="squareInput" class="form-control mb-3" placeholder="Počet čtverců">
+            <input type="number" id="circleInput" class="form-control mb-3" placeholder="Počet kruhů">
+            <button id="submitAnswerBtn" class="btn btn-success mb-3">Odeslat odpověď</button>
+        </div>
+        <h2>Skóre: <span id="score">0</span></h2>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
